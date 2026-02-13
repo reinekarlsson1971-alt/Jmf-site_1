@@ -4,17 +4,16 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Xylocap liniment – för aktivt liv, punktprecision & återhämtning (2026)</title>
-  <meta name="description" content="Upptäck Xylocap Strong och jämför populära liniment. SEO-guide: värmande vs kylande, roll-on vs stick, och hur du väljer rätt för träning och vardagsbelastning." />
+  <title>Xylocap liniment – roll-on med precision för aktivt liv, muskler & leder (2026)</title>
+  <meta name="description" content="Upptäck Xylocap Strong och jämför populära liniment. Guide: värmande vs kylande, roll-on vs stick och hur du väljer rätt för träning, vardagsbelastning och stelhet." />
 
-  <!-- Fonts (client-side ok). Om ni måste köra helt utan externa anrop: säg till så ersätter jag med systemfont. -->
+  <!-- Fonts (kan flyttas till lokal hosting om ni vill) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
 
   <style>
     :root{
-      /* neutrala ljusa */
       --bg: #fbfbfc;
       --surface: #ffffff;
       --surface2: #f4f6f8;
@@ -22,7 +21,7 @@
       --muted: #5b6472;
       --line: #e6e8ee;
 
-      /* accent (behåller din gröna "winner" som brandaccent om ni inte anger annat) */
+      /* Accent (behåll/byt till era brandfärger vid behov) */
       --accent: #065f46;
       --accent2: #0b7a57;
       --accentBg: #ecfdf5;
@@ -43,12 +42,12 @@
       margin:0;
       font-family: var(--font-body);
       color: var(--text);
-      background: radial-gradient(900px 420px at 15% 0%, rgba(6,95,70,.08), transparent 60%),
-                  radial-gradient(700px 360px at 85% 0%, rgba(15,23,42,.06), transparent 55%),
-                  var(--bg);
+      background:
+        radial-gradient(900px 420px at 15% 0%, rgba(6,95,70,.08), transparent 60%),
+        radial-gradient(700px 360px at 85% 0%, rgba(15,23,42,.06), transparent 55%),
+        var(--bg);
       line-height: 1.65;
     }
-
     a{ color: inherit; text-decoration: none; }
     a:hover{ text-decoration: underline; }
 
@@ -120,7 +119,6 @@
       font-weight: 600;
       margin-top: 2px;
     }
-
     .nav{
       display:flex;
       gap: 8px;
@@ -144,9 +142,7 @@
     }
 
     /* Hero */
-    header.hero{
-      padding: 18px 0 8px;
-    }
+    header.hero{ padding: 18px 0 8px; }
     .hero-card{
       border: 1px solid var(--line);
       background:
@@ -158,7 +154,6 @@
       padding: 22px;
       overflow:hidden;
     }
-
     h1,h2,h3{ font-family: var(--font-head); }
     h1{
       margin: 0 0 10px;
@@ -170,9 +165,8 @@
       margin: 0 0 14px;
       color: var(--muted);
       font-size: 16px;
-      max-width: 70ch;
+      max-width: 72ch;
     }
-
     .hero-grid{
       display:grid;
       grid-template-columns: 1.3fr .7fr;
@@ -183,12 +177,7 @@
     @media (max-width: 920px){
       .hero-grid{ grid-template-columns: 1fr; }
     }
-
-    .hero-points{
-      margin: 0;
-      padding-left: 18px;
-      color: var(--text);
-    }
+    .hero-points{ margin: 0; padding-left: 18px; }
     .hero-points li{ margin: 8px 0; }
     .hero-aside{
       border: 1px solid rgba(6,95,70,.20);
@@ -202,6 +191,7 @@
       font-size: 16px;
       letter-spacing: -0.01em;
     }
+
     .meta{
       display:flex;
       flex-wrap: wrap;
@@ -256,9 +246,7 @@
     .btn-ghost:hover{ background: var(--surface2); }
 
     /* Sections */
-    .section{
-      margin-top: 22px;
-    }
+    .section{ margin-top: 22px; }
     .section-title{
       margin: 28px 0 10px;
       font-size: 22px;
@@ -278,7 +266,6 @@
     @media (min-width: 760px){
       .grid-3{ grid-template-columns: repeat(3, 1fr); }
     }
-
     .card{
       border: 1px solid var(--line);
       background: rgba(255,255,255,.92);
@@ -302,7 +289,6 @@
     @media (min-width: 820px){
       .products{ grid-template-columns: 1fr 1fr; }
     }
-
     .product{
       display:grid;
       grid-template-columns: 140px 1fr;
@@ -340,6 +326,7 @@
     .badge-row{ display:flex; flex-wrap:wrap; gap: 8px; margin-bottom: 8px; }
     .product-title{ margin: 0; font-size: 18px; letter-spacing: -0.01em; }
     .product-sub{ margin: 4px 0 10px; color: var(--muted); font-size: 13px; }
+
     .mini-grid{
       display:grid;
       grid-template-columns: 1fr 1fr;
@@ -366,11 +353,7 @@
       background: rgba(255,255,255,.92);
       box-shadow: var(--shadow2);
     }
-    table{
-      width:100%;
-      border-collapse: collapse;
-      min-width: 920px;
-    }
+    table{ width:100%; border-collapse: collapse; min-width: 920px; }
     th, td{
       padding: 12px 14px;
       border-bottom: 1px solid var(--line);
@@ -474,7 +457,6 @@
 
   <div class="topbar">
     <div class="topbar-inner">
-      <!-- Här kan ni byta ut brand-mark mot er logga (behåller "logga" om ni redan har en bild i ert riktiga projekt) -->
       <div class="brand" aria-label="Xylocap">
         <div class="brand-mark" aria-hidden="true"></div>
         <div>
@@ -497,8 +479,8 @@
       <div class="hero-card">
         <h1>Xylocap liniment för ett aktivt liv – precision, värme och återhämtning</h1>
         <p class="subtitle">
-          För dig som tränar, jobbar med repetitiva rörelser eller vill lindra stelhet i vardagen.
-          Här lyfter vi fram Xylocap Strong och ger en tydlig översikt över populära liniment på den svenska marknaden.
+          För dig som tränar, lever aktivt eller vill lindra stelhet i vardagen.
+          Här presenterar vi Xylocap Strong och ger en tydlig översikt över populära liniment på den svenska marknaden.
         </p>
 
         <div class="actions">
@@ -516,7 +498,7 @@
             </ul>
 
             <p style="margin-top: 12px;">
-              Sammanställningen baseras på produktinfo, ingredienslistor (INCI), synliga varningar, format (roll-on, stick, gel, kräm)
+              Sammanställningen baseras på produktinformation, ingredienslistor (INCI), synliga varningar, format (roll-on, stick, gel, kräm)
               och kundomdömen hos svenska återförsäljare.
             </p>
 
@@ -535,11 +517,11 @@
             <h3>Rekommenderad för punktprecision</h3>
             <p style="margin:0 0 10px;">
               <strong>Xylocap Strong roll-on</strong> är ett praktiskt val när du vill applicera exakt och slippa kladd på händerna.
-              Många upplever en tydlig och långvarig värmekänsla.
+              Formulan är kladdfri och luktfri och många upplever en tydlig, långvarig värmekänsla.
             </p>
             <div class="actions" style="margin-top: 10px;">
               <a class="btn" href="https://www.apotea.se/xylocap-strong-roll-on-liniment-50-ml" target="_blank" rel="noopener">Se hos Apotea</a>
-              <a class="btn btn-ghost" href="https://xylocap.se/xylocap-liniment-rollon/" target="_blank" rel="noopener">Produktinfo</a>
+              <a class="btn btn-ghost" href="/produkter/xylocap-strong.html">Läs mer</a>
             </div>
           </aside>
         </div>
@@ -549,7 +531,7 @@
     <section class="section" aria-label="Varför Xylocap">
       <h2 class="section-title">Varför många väljer Xylocap vid aktivitet och belastning</h2>
       <p class="hint">
-        Fokus på målgruppen: aktiv fritid – och för dig som känner av stelhet, ledvärk eller “musarm” av upprepad belastning.
+        Fokus på målgruppen: aktiv fritid – och för dig som känner av stelhet, ledvärk eller belastningsbesvär i vardagen.
       </p>
 
       <div class="grid-3">
@@ -568,7 +550,7 @@
         <div class="card">
           <h3>Smidig vardagsrutin</h3>
           <p class="muted" style="margin:0;">
-            Formatet och appliceringen spelar roll i vardagen: snabbt, diskret och lätt att ta med i väskan.
+            Formatet spelar roll: snabbt, diskret och lätt att ta med i träningsväskan eller arbetsväskan.
           </p>
         </div>
       </div>
@@ -576,7 +558,9 @@
 
     <section id="produkter" class="section" aria-label="Produkter">
       <h2 class="section-title">Produkter – bilder, fakta och länkar</h2>
-      <p class="hint">Alla produktbilder är samma externa länkar som i din originalkod. Varje kort kan länka till en egen produktsida.</p>
+      <p class="hint">
+        Alla produktbilder är samma externa länkar som i din originalkod. “Läs mer” går nu till era nya produktsidor.
+      </p>
 
       <div class="products">
         <!-- Xylocap -->
@@ -605,8 +589,7 @@
             </div>
 
             <p style="margin:0 0 10px;">
-              Ett starkt värmande liniment i roll-on-format för dig som vill applicera exakt och slippa kladd.
-              Passar särskilt bra när du vill fokusera på mindre områden.
+              Extra kraftfullt, kladdfritt och luktfritt roll-on-liniment med långvarig värmekänsla – smidigt när du vill applicera exakt.
             </p>
 
             <div class="actions">
@@ -637,7 +620,7 @@
             </div>
 
             <p style="margin:0 0 10px;">
-              Ett klassiskt stick för dig som är van vid stark värme och vill ha ett format som är enkelt att använda utan kladd.
+              Värmande idrottsliniment i stickformat med salicylsyra, capsaicin och mentol – kladdfritt och enkelt att dosera.
             </p>
 
             <div class="actions">
@@ -667,7 +650,7 @@
             </div>
 
             <p style="margin:0 0 10px;">
-              För dig som prioriterar svalka efter belastning. Stor tub och låg kostnad per ml gör den till ett prisvärt alternativ.
+              Kylande mentolgel med snabb effekt – ofta vald vid belastningsbesvär samt efter träning när du vill ha tydlig kylkänsla.
             </p>
 
             <div class="actions">
@@ -696,7 +679,7 @@
             </div>
 
             <p style="margin:0 0 10px;">
-              Ett stabilt värmealternativ med klassisk linimentkänsla för dig som vill smörja in över lite större ytor.
+              Kraftfullt liniment med arnika, chili och mentol – framtaget för tydlig effekt och mjuk, smidig hudkänsla.
             </p>
 
             <div class="actions">
@@ -725,7 +708,7 @@
             </div>
 
             <p style="margin:0 0 10px;">
-              Ett smidigt stick för dig som vill slippa kladd och få värme snabbt. Bra format att ha med i träningsväskan.
+              Kraftfullt värmande stick med arnika, het chili, mentol och eukalyptus – enkel applicering utan kladd på händerna.
             </p>
 
             <div class="actions">
@@ -754,7 +737,7 @@
             </div>
 
             <p style="margin:0 0 10px;">
-              Mer kräm än klassiskt liniment – ofta vald efter dusch eller på kvällen när du vill kombinera värme med mjukare hudkänsla.
+              Magnesiumkräm med värmande effekt och vårdande känsla – ofta använd efter dusch eller träningspass, upp till ca 2 timmar.
             </p>
 
             <div class="actions">
@@ -771,7 +754,7 @@
           </div>
           <div class="product-body">
             <div class="badge-row">
-              <span class="pill">Mild & doftfri</span>
+              <span class="pill">Mild & luktfri</span>
               <span class="pill"><strong>Kundbetyg:</strong> 4,2/5</span>
             </div>
             <h3 class="product-title">Ormsalva Original 150 ml</h3>
@@ -783,7 +766,7 @@
             </div>
 
             <p style="margin:0 0 10px;">
-              Ett mildare alternativ som ofta uppskattas vid massage eller när du vill undvika stark doft och kraftig effekt.
+              Klassisk luktfri massageliniment med arnika och grafit – lätt att massera in, även i mer professionella sammanhang.
             </p>
 
             <div class="actions">
@@ -818,7 +801,10 @@
                   <img class="mini-img" src="https://media.apotea.se/product-images/XL/xylocap-strong-2.jpg" alt="Xylocap Strong roll-on liniment 50 ml" loading="lazy" referrerpolicy="no-referrer"/>
                   <div>
                     <div class="mini-title">Xylocap Strong</div>
-                    <div class="mini-meta"><a href="/produkter/xylocap-strong.html">Läs mer</a> · <a href="https://www.apotea.se/xylocap-strong-roll-on-liniment-50-ml" target="_blank" rel="noopener">Apotea</a></div>
+                    <div class="mini-meta">
+                      <a href="/produkter/xylocap-strong.html">Läs mer</a> ·
+                      <a href="https://www.apotea.se/xylocap-strong-roll-on-liniment-50-ml" target="_blank" rel="noopener">Apotea</a>
+                    </div>
                   </div>
                 </div>
               </td>
@@ -835,7 +821,10 @@
                   <img class="mini-img" src="https://media.apotea.se/product-images/XL/linnex-50-g-0.jpg" alt="Linnex Stick 50 g" loading="lazy" referrerpolicy="no-referrer"/>
                   <div>
                     <div class="mini-title">Linnex Stick</div>
-                    <div class="mini-meta"><a href="/produkter/linnex-stick.html">Läs mer</a> · <a href="https://www.apotea.se/linnex-stick-50-g" target="_blank" rel="noopener">Apotea</a></div>
+                    <div class="mini-meta">
+                      <a href="/produkter/linnex-stick.html">Läs mer</a> ·
+                      <a href="https://www.apotea.se/linnex-stick-50-g" target="_blank" rel="noopener">Apotea</a>
+                    </div>
                   </div>
                 </div>
               </td>
@@ -852,7 +841,10 @@
                   <img class="mini-img" src="https://media.apotea.se/product-images/XL/ice-power-150-ml-0.jpg" alt="Ice Power kylande gel 150 ml" loading="lazy" referrerpolicy="no-referrer"/>
                   <div>
                     <div class="mini-title">Ice Power gel</div>
-                    <div class="mini-meta"><a href="/produkter/ice-power-gel.html">Läs mer</a> · <a href="https://www.apotea.se/ice-power-kylande-gel-150-ml" target="_blank" rel="noopener">Apotea</a></div>
+                    <div class="mini-meta">
+                      <a href="/produkter/ice-power-gel.html">Läs mer</a> ·
+                      <a href="https://www.apotea.se/ice-power-kylande-gel-150-ml" target="_blank" rel="noopener">Apotea</a>
+                    </div>
                   </div>
                 </div>
               </td>
@@ -869,7 +861,10 @@
                   <img class="mini-img" src="https://media.apotea.se/product-images/XL/ormsalva-extrem-75ml-3.jpg" alt="Ormsalva Extrem 70 ml" loading="lazy" referrerpolicy="no-referrer"/>
                   <div>
                     <div class="mini-title">Ormsalva Extrem</div>
-                    <div class="mini-meta"><a href="/produkter/ormsalva-extrem.html">Läs mer</a> · <a href="https://www.apotea.se/ormsalva-extrem-75ml" target="_blank" rel="noopener">Apotea</a></div>
+                    <div class="mini-meta">
+                      <a href="/produkter/ormsalva-extrem.html">Läs mer</a> ·
+                      <a href="https://www.apotea.se/ormsalva-extrem-75ml" target="_blank" rel="noopener">Apotea</a>
+                    </div>
                   </div>
                 </div>
               </td>
@@ -886,7 +881,10 @@
                   <img class="mini-img" src="https://media.apotea.se/product-images/XL/ormsalva-fire-stick-varmande-liniment-50-ml-5.jpg" alt="Ormsalva Fire Stick värmande liniment 50 ml" loading="lazy" referrerpolicy="no-referrer"/>
                   <div>
                     <div class="mini-title">Ormsalva Fire Stick</div>
-                    <div class="mini-meta"><a href="/produkter/ormsalva-fire-stick.html">Läs mer</a> · <a href="https://www.apotea.se/ormsalva-fire-stick-varmande-liniment-50-ml" target="_blank" rel="noopener">Apotea</a></div>
+                    <div class="mini-meta">
+                      <a href="/produkter/ormsalva-fire-stick.html">Läs mer</a> ·
+                      <a href="https://www.apotea.se/ormsalva-fire-stick-varmande-liniment-50-ml" target="_blank" rel="noopener">Apotea</a>
+                    </div>
                   </div>
                 </div>
               </td>
@@ -903,7 +901,10 @@
                   <img class="mini-img" src="https://media.apotea.se/product-images/XL/ormsalva-magnesium-heat-200-ml-0.jpg" alt="Ormsalva Magnesium Heat 200 ml" loading="lazy" referrerpolicy="no-referrer"/>
                   <div>
                     <div class="mini-title">Ormsalva Magnesium Heat</div>
-                    <div class="mini-meta"><a href="/produkter/ormsalva-magnesium-heat.html">Läs mer</a> · <a href="https://www.apotea.se/ormsalva-magnesium-heat-200-ml" target="_blank" rel="noopener">Apotea</a></div>
+                    <div class="mini-meta">
+                      <a href="/produkter/ormsalva-magnesium-heat.html">Läs mer</a> ·
+                      <a href="https://www.apotea.se/ormsalva-magnesium-heat-200-ml" target="_blank" rel="noopener">Apotea</a>
+                    </div>
                   </div>
                 </div>
               </td>
@@ -920,7 +921,10 @@
                   <img class="mini-img" src="https://media.apotea.se/product-images/XL/ormsalva-original-150-ml-3.jpg" alt="Ormsalva Original 150 ml" loading="lazy" referrerpolicy="no-referrer"/>
                   <div>
                     <div class="mini-title">Ormsalva Original</div>
-                    <div class="mini-meta"><a href="/produkter/ormsalva-original.html">Läs mer</a> · <a href="https://www.apotea.se/ormsalva-original-150-ml" target="_blank" rel="noopener">Apotea</a></div>
+                    <div class="mini-meta">
+                      <a href="/produkter/ormsalva-original.html">Läs mer</a> ·
+                      <a href="https://www.apotea.se/ormsalva-original-150-ml" target="_blank" rel="noopener">Apotea</a>
+                    </div>
                   </div>
                 </div>
               </td>
@@ -942,7 +946,7 @@
         <h3>Värmande liniment – när passar det bäst?</h3>
         <ul>
           <li>Inför aktivitet när du vill komma igång och mjuka upp stelhet.</li>
-          <li>När du söker en känsla av “värme” som ligger kvar en längre stund.</li>
+          <li>När du söker en värmekänsla som ligger kvar en längre stund.</li>
           <li>Om du vill fokusera på punktområden (t.ex. nacke, underarm, axel).</li>
         </ul>
 
@@ -978,7 +982,7 @@
           Värme och ökad blodcirkulation kan förstärka upplevelsen. Om området ska bli varmt, applicera mindre mängd.
         </p>
 
-        <h3>Vilka ämnen är vanligast i liniment?</h3>
+        <h3>Vilka ämnen är vanliga i liniment?</h3>
         <p class="muted">
           Vanliga komponenter är capsaicin/capsicum, mentol, salicylater (t.ex. methyl salicylate) och växtextrakt som arnika.
         </p>
@@ -1013,17 +1017,20 @@
           <a href="https://www.apotea.se/" target="_blank" rel="noopener">Apotea</a>
           <a href="https://www.meds.se/" target="_blank" rel="noopener">MEDS</a>
           <a href="https://www.kronansapotek.se/" target="_blank" rel="noopener">Kronans Apotek</a>
-          <a href="/produkter/linnex-stick.html">Linnex</a>
-          <a href="/produkter/ice-power-gel.html">Ice Power</a>
-          <a href="/produkter/ormsalva-extrem.html">Ormsalva</a>
+
+          <a href="/produkter/linnex-stick.html">Linnex (produktsida)</a>
+          <a href="/produkter/ice-power-gel.html">Ice Power (produktsida)</a>
+          <a href="/produkter/ormsalva-extrem.html">Ormsalva Extrem (produktsida)</a>
+          <a href="/produkter/ormsalva-fire-stick.html">Ormsalva Fire Stick (produktsida)</a>
+          <a href="/produkter/ormsalva-magnesium-heat.html">Ormsalva Magnesium Heat (produktsida)</a>
+          <a href="/produkter/ormsalva-original.html">Ormsalva Original (produktsida)</a>
         </div>
       </div>
     </footer>
   </main>
 
   <script>
-    // Minimal JS (inget ramverk): här finns utrymme för framtida förbättringar
-    // Ex: markera aktiv nav-länk vid scroll, eller lägga till mobilmeny.
+    // Minimal JS (plats för ev. mobilmeny/active nav senare)
   </script>
 </body>
 </html>

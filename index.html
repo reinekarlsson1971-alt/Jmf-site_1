@@ -18,24 +18,29 @@
 <body>
   <a class="skip-link" href="#main">Hoppa till innehåll</a>
 
-  <div class="topbar">
-    <div class="topbar-inner">
-      <div class="brand" aria-label="Xylocap">
-        <div class="brand-mark" aria-hidden="true"></div>
-        <div>
-          <div class="brand-name">Xylocap</div>
-          <span class="brand-sub">Liniment för aktivitet & vardag</span>
-        </div>
-      </div>
+  <div id="site-topbar" data-active=""></div>
 
-      <nav class="nav" aria-label="Huvudnavigation">
-        <a href="#produkter">Produkter</a>
-        <a href="#jamforelse">Jämförelse</a>
-        <a href="#guide">Guide</a>
-        <a href="#faq">FAQ</a>
-      </nav>
-    </div>
-  </div>
+<script>
+  (async () => {
+    const mount = document.getElementById("site-topbar");
+    if (!mount) return;
+
+    try {
+      const res = await fetch("/topbar.html", { cache: "no-cache" });
+      if (!res.ok) throw new Error("Topbar fetch failed");
+      mount.outerHTML = await res.text();
+    } catch (e) {
+      // Fallback: gör inget om fetch inte fungerar (t.ex. vid file://)
+      // Rekommenderat: kör via local server (t.ex. VS Code Live Server)
+      console.warn(e);
+    }
+  })();
+</script>
+
+
+<div id="site-topbar" data-active=""></div>
+<script>/* loader-koden */</script>
+
 
   <main id="main" class="container">
     <header class="hero">

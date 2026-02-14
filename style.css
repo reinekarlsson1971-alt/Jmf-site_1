@@ -5,6 +5,7 @@
   --text:#0f172a;
   --muted:#5b6472;
   --line:#e6e8ee;
+.topbar { -webkit-backdrop-filter: blur(10px); }
 
   /* Brand accent (behåll era varumärkesfärger) */
   --accent:#065f46;
